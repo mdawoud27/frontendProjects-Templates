@@ -3,6 +3,8 @@
 /* start variables */
 :root {
     --main-color: #10cab7;
+    --sec-color: #2c4755;
+    --section-bk: #f6f6f6;
     --main-transtion: all 0.3s;
     --main-padding: 5rem;
 }
@@ -132,7 +134,7 @@ body {
 }
 
 .header .links ul {
-    background-color: #F6F6F6;
+    background-color: var(--section-bk);
     position: absolute;
     right: 0;
     min-width: 10rem;
@@ -144,7 +146,7 @@ body {
 .header .links ul::before {
     content: "";
     border: 0.7rem solid;
-    border-color: transparent transparent #F6F6F6;
+    border-color: transparent transparent var(--section-bk);
     position: absolute;
     right: 0.4rem;
     top: -1.4rem;
@@ -195,7 +197,7 @@ h1 {
 /* Start features section */
 .features {
     padding: var(--main-padding) 0;
-    background-color: #F6F6F6;
+    background-color: var(--section-bk);
 }
 
 .features .container {
@@ -219,10 +221,15 @@ h1 {
     line-height: 1.8;
     color: #777;
     font-size: 1rem;
+    font-weight: 300;
 }
 
 .features .feat i, .features .feat h3 {
     color: var(--main-color);
+}
+
+.feat:nth-child(2) {
+    box-shadow: 0px 1px 3px 1px #eee;
 }
 /* End features section */
 
@@ -235,6 +242,116 @@ h1 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
     gap: 1.5rem;
+    margin-top: 5rem;
+}
 
+.sevices .services-content .serve {
+    display: flex;
+    margin-bottom: 2.7rem;
+}
+
+@media (max-width: 767px) {
+    .sevices .services-content .serve {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.sevices .services-content .serve i {
+    color: var(--main-color);
+    flex-basis: 60px;
+}
+
+.sevices .services-content .serve .serve-text {
+    flex: 1;
+}
+
+.sevices .services-content .serve .serve-text h3 {
+    margin: 0 0 1rem;
+    text-transform: capitalize;
+}
+
+.sevices .services-content .serve .serve-text p {
+    color: #777;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.column .image {
+    text-align: center;
+    position: relative;
+}
+
+.column .image::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -2rem;
+    width: 5rem;
+    height: calc(100% + 4rem);
+    z-index: -1;
+    background-color: var(--sec-color);
+}
+
+.column .image img {
+    width: 19rem;
+}
+
+@media (max-width: 1199px) {
+    .m-img {
+        display: none;
+    }
 }
 /* End services section */
+
+/* Start Portfolio Section */
+.portfolio {
+    padding: var(--main-padding) 0;
+    background-color: var(--section-bk);
+}
+
+.portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    gap: 1.5rem;
+    margin-top: 5rem;
+    justify-items: center;
+}
+
+.portfolio-content .card {
+    background-color: white;
+    max-width: 20rem;
+    border-radius: 0.5rem;
+    /* transition: var(--main-transtion); */
+}
+
+.portfolio-content .card img {
+    max-width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+    transition: var(--main-transtion);
+}
+
+.portfolio-content .card:hover img {
+    opacity: 0.8;
+    overflow: hidden;
+
+}
+
+.portfolio-content .card .p-info {
+   padding: 1rem;
+}
+
+.portfolio-content .card .p-info h3 {
+    margin-bottom: 0.7rem;
+    text-transform: capitalize;
+}
+
+.portfolio-content .card .p-info p {
+    color: #777;
+    line-height: 1.5;
+}
+/* End Portfolio Section */
+
+/* Start About Section */
+
+/* End About Section */
