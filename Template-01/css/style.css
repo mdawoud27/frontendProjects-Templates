@@ -462,3 +462,50 @@ h1 {
     }
 }
 /* End About Section */
+
+/* Start contact section */
+.contact {
+    padding: var(--main-padding) 0;
+    background-color: var(--section-bk);
+}
+
+.contact-info {
+    padding: var(--main-padding) 0;
+    text-align: center;
+}
+
+.contact-info h4 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--sec-color);
+    letter-spacing: -1px;
+    margin-bottom: 1rem;
+} 
+
+.contact-info h4::first-letter {
+    text-transform: capitalize;
+}
+
+.contact-info a {
+    font-size: 1.9rem;
+    color: var(--main-color);
+    line-height: 2;
+}
+
+.social-icons {
+    line-height: 3;
+    color: var(--sec-color);
+    text-transform: capitalize;
+
+}
+
+.social-icons i {
+    transition: var(--main-transtion);
+    margin-left: 0.3rem;
+}
+
+.social-icons i:hover {
+    color: var(--main-color);
+}
+/* End contact section */
+
