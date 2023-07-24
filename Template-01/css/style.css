@@ -310,6 +310,11 @@ h1 {
     background-color: var(--section-bk);
 }
 
+.portfolio .container {
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
 .portfolio-content {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
@@ -320,7 +325,7 @@ h1 {
 
 .portfolio-content .card {
     background-color: white;
-    max-width: 20rem;
+    min-width: 19rem;
     border-radius: 0.5rem;
     /* transition: var(--main-transtion); */
 }
@@ -350,8 +355,110 @@ h1 {
     color: #777;
     line-height: 1.5;
 }
+
+.btn {
+    display: grid;
+    place-content: center;
+    margin-top: 4rem;
+
+}
+
+.btn button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #777;
+    transition: var(--main-transtion);
+    text-transform: capitalize;
+    background-color: white;
+}
+
+.btn button:hover {
+    background-color: var(--main-color);
+    color: white;
+} 
+
 /* End Portfolio Section */
 
 /* Start About Section */
+.about {
+    padding: var(--main-padding) 0;
 
+}
+
+.about-content {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-content .image {
+    position: relative;
+    width: 15.625rem;
+    height: 23.4375;
+}
+
+.about-content .image::before {
+    content: '';
+    position: absolute;
+    background-color: #ebeced;
+    width: 6.25rem;
+    height: calc(100% + 4rem);
+    top: -2rem;
+    left: -1.5rem;
+    z-index: -1;
+}
+
+.about-content .image::after {
+    content: '';
+    position: absolute;
+    width: 6rem;
+    height: 18rem;
+    border-left: 5rem solid var(--main-color);
+    border-bottom: 4rem solid var(--main-color);
+    right: -8rem;
+    top: -3rem;
+    z-index: -1;
+}
+
+.about-content .image img {
+    max-width: 100%;
+}
+
+.about-text {
+    flex-basis: calc(100% - 31.25rem);
+}
+
+.about-text p:first-of-type {
+    font-weight: bold;
+    line-height: 2;
+    margin-bottom: 2rem;
+}
+
+.about-text hr {
+    width: 50%;
+    background-color: var(--main-color);
+    height: 2px;
+    border: none;
+    display: inline-block;
+}
+
+.about-text p:last-of-type {
+    line-height: 2;
+    color: #777;
+}
+
+@media (max-width: 991px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-content .image {
+        margin: 0 auto 3rem;
+    }
+    .about-content .image::before,
+    .about-content .image::after {
+        display: none;
+    }
+}
 /* End About Section */
