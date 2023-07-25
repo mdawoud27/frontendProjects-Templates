@@ -8,7 +8,7 @@
 
 ## **Features**
 * Simple and elegant design.
-* Responsive layout, suitable for desktop, tablet, and mobile devices, [*The screens on different devices are below*](#customization).
+* Responsive layout, suitable for desktop, tablet, and mobile devices, [*The screens on different devices are below*](#Customization).
 * Utilizes ***Grid*** and ***Flexbox*** for flexible and responsive web design.
 * Portfolio section to showcase your projects.
 * About Me section to introduce yourself and share your background.
@@ -35,15 +35,15 @@ To use this template, follow these steps:
 
 ### Screens On Different Devices
 *Screens are not fully exactly.. try the live version from [here](https://leon-self.vercel.app/)*
-* Large Screens - *desktop*
+* **Large Screens** - *desktop*
 
     ![May be the pic is broken, try the live version :)](images/leon-desktop.png)
     
-* Meduim Screens - *tablet*
+* **Meduim Screens** - *tablet*
 
     ![May be the pic is broken, try the live version :)](images/tablet.png)
 
-* Small Screens - *mobile*
+* **Small Screens** - *mobile*
 
     ![May be the pic is broken, try the live version :)](images/leon-mobile.png)
 
