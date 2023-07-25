@@ -21,11 +21,13 @@ To use this template, follow these steps:
 
     Use the following command:
 
-    `git clone https://github.com/mdawoud27/frontendProjects-Templates.git`
+    ```
+       git clone https://github.com/mdawoud27/frontendProjects-Templates.git
+    ```
 
-2. Navigate to the ***Template-01*** directory.
+3. Navigate to the ***Template-01*** directory.
 
-3. Open the `index.html` file in your web browser to see the default template.
+4. Open the `index.html` file in your web browser to see the default template.
 
 ## **Customization**
 
