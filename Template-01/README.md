@@ -8,11 +8,7 @@
 
 ## **Features**
 * Simple and elegant design.
-<<<<<<< HEAD
-* Responsive layout, suitable for desktop, tablet, and mobile devices, [*The screens on different devices are below*](#customization).
-=======
 * Responsive layout, suitable for desktop, tablet, and mobile devices, [*The screens on different devices are below*](#Customization).
->>>>>>> origin/main
 * Utilizes ***Grid*** and ***Flexbox*** for flexible and responsive web design.
 * Portfolio section to showcase your projects.
 * About Me section to introduce yourself and share your background.
