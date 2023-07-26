@@ -4,8 +4,9 @@
 /* Global Variables */
 :root {
     --main-color: #19c8fa;
+    --transparent-color: rgb(15 116 143 / 70%);
     --main-transtion: 0.3s;
-    --main-padding: 5rem;
+    /* --main-padding: 5rem; */
 }
 
 /* Global Rules */
@@ -126,7 +127,7 @@ header nav ul {
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: black;
+        background-color: rgb(56 51 51 / 50%);
     }
     header nav .toggle-menu:hover + ul li a {
         padding: 1rem;
@@ -169,3 +170,111 @@ header nav ul li a:hover {
     color: var(--main-color);
 }
 /* End Header */
+
+/* Start landing section */
+.landing {
+    min-height: 100vh;
+    background-color: #1f2021;
+    background-image: url(../images/landing.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.landing .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 50%);
+}
+
+.landing-text {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    padding: 2rem;
+    background-color: var(--transparent-color);
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.landing-content {
+    max-width: 28rem;
+}
+
+@media (max-width: 767px) {
+    .landing-text {
+        width: 100%;
+    }
+    .landing-content {
+        max-width: 100%;
+    }
+}
+
+.landing-content h2 {
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 1.3rem;
+}
+
+.landing-content p {
+    font-size: 0.9rem;
+    line-height: 2;
+}
+
+.change-bk {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ddd;
+}
+
+.change-bk:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .change-bk {
+        display: none;
+    }
+}
+
+.fa-angle-left {
+    left: 1.2rem;
+}
+
+.fa-angle-right {
+    right: 1.2rem;
+}
+
+.bullets {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    display: flex;
+}
+
+.bullets:hover {
+    cursor: pointer;
+}
+
+.bullets li {
+    width: 0.8rem;
+    height: 0.8rem;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+    margin-left: 0.3rem;
+}
+
+.bullets li.active {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+/* End landing section */
