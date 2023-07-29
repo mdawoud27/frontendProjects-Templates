@@ -1,5 +1,9 @@
 # Leon - Agency Template
 
+<div align="center">
+    <img src="images/logo.png" alt="leon Logo" draggable="false" />
+</div>
+
 ## **Introduction**
 
 *This README file provides essential information and guidance for using and customizing the Leon website template. This template is designed to create a personal portfolio or a simple personal website. It showcases your projects, skills, and provides a platform to introduce yourself to the online world.*
@@ -37,15 +41,19 @@ To use this template, follow these steps:
 *Screens are not fully exactly.. try the live version from [here](https://leon-self.vercel.app/)*
 * **Large Screens** - *desktop*
 
-    ![May be the pic is broken, try the live version :)](images/leon-desktop.png)
+    <div align="center"><img src="images/leon-desktop.png" alt="leon desktop version" draggable="false" /></div>
     
 * **Meduim Screens** - *tablet*
 
-    ![May be the pic is broken, try the live version :)](images/tablet.png)
+    <div align="center">
+     <img src="images/tablet.png" alt="leon tablet version" draggable="false" />
+    </div>)
 
 * **Small Screens** - *mobile*
 
-    ![May be the pic is broken, try the live version :)](images/leon-mobile.png)
+    <div align="center">
+     <img src="images/leon-mobile.png" alt="leon mobile version" draggable="false" />
+    </div>
 
 ## **Deployment**
 

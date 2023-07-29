@@ -44,21 +44,21 @@ To use this template, follow these steps:
 *Screens are not fully exact.. try the live version from [here](https://kasper-ecru.vercel.app/)*
 * **Large Screens** - *desktop*
 
-    ![May be the pic is broken, try the live version :](<div align="center">
+    <div align="center">
      <img src="images/kasper-desktop.png" alt="Kasper Logo" draggable="false" />
-    </div>)
+    </div>
     
 * **Meduim Screens** - *tablet*
 
-    ![May be the pic is broken, try the live version :](<div align="center">
+    <div align="center">
      <img src="images/kasper-tablet.png" alt="Kasper Logo" draggable="false" />
-    </div>)
+    </div>
 
 * **Small Screens** - *mobile*
 
-    ![May be the pic is broken, try the live version :](<div align="center">
+    <div align="center">
      <img src="images/kasper-mobile.png" alt="Kasper Logo" draggable="false" />
-    </div>)
+    </div>
 
 ## **Browser Compatibility**
 
