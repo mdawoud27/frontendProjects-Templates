@@ -2,7 +2,7 @@
 # Kasper - One Page Creative PSD Template
 
 <!-- Add the Kasper logo image and center it -->
-<div style="display: flex; justify-content: center;">
+<div align="center">
   <img src="images/logoo.png" alt="Kasper Logo" draggable="false" />
 </div>
 
@@ -62,6 +62,7 @@ The template has been tested on the following web browsers:
 * Mozilla Firefox
 * Microsoft Edge
 * Safari
+
 ## Credits
 
 This website template was created by **Kasper**. You can find the template [*here*](https://www.graphberry.com/item/kasper-one-page-psd-template).
