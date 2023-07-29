@@ -47,7 +47,7 @@ To use this template, follow these steps:
 
     <div align="center">
      <img src="images/tablet.png" alt="leon tablet version" draggable="false" />
-    </div>)
+    </div>
 
 * **Small Screens** - *mobile*
 
