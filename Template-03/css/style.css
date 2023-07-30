@@ -5,6 +5,8 @@
 :root {
     --main-color: #ff3e66;
     --alt-color: #0e1133;
+    --alt-background: #eef1f6;
+    --transition: 0.3s;
 }
 
 /* Global Rules */
@@ -20,6 +22,7 @@ html {
 
 body {
     font-family: 'Roboto', 'Open Sans', 'Work Sans', sans-serif;
+    background-color: var(--alt-background);
 }
 
 a {
@@ -61,3 +64,76 @@ ul {
 
 
 /* Common Elements */
+
+/* Start Header section */
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    min-height: 5.149375rem;
+}
+
+.logo img {
+    width: 6rem;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+@media (max-width: 767px) {
+    nav {
+        justify-content: flex-end;
+    }
+    header nav ul {
+        display: none;
+    }
+}
+
+nav ul li a {
+    display: block;
+    color: var(--alt-color);
+    padding: 2rem 1.5rem;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+nav button {
+    background-color: var(--main-color);
+    color: white;
+    padding: 0.6rem 1.3rem;
+    border: none;
+    border-radius: 4rem;
+    font-weight: 500;
+}
+
+@media (max-width: 991px) {
+    nav button {
+        margin-right: 1.4rem;
+        padding: 0.7rem 0.5rem;
+        font-size: 0.8rem;
+    }
+}
+
+.toggle-menu {
+    font-size: 1.4rem;
+} 
+
+@media (min-width: 768px) {
+    header nav .toggle-menu {
+        display: none;
+    }
+}
+/* End Header section */
+
