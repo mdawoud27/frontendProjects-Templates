@@ -1,6 +1,6 @@
 # frontendProjects-Templates
 
-Here I am increasing my experience in **Web Development** by practising on *online templates* whatever *YouTube videos* or *creating new template*.
+Here I am increasing my experience in **Web Development** by practising on *online templates* whatever *YouTube videos* or *creating new templates*.
 
 Also practise on **frontend Mentor**, and you can see the repo [*here*](https://github.com/mdawoud27/frontendMentorChallenges).
 
