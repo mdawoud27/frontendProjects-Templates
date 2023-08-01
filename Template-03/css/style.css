@@ -588,12 +588,12 @@ nav button {
     padding: 3rem 0;
 }
 
-.main-header , .main-header + p{
+.services .main-header , .services .main-header + p{
     text-align: center;
     color: white;
 }
 
-.main-header + p {
+.services .main-header + p {
     font-weight: 500;
 }
 
@@ -668,7 +668,7 @@ nav button {
     opacity: 0.3;
     top: 50%;
     transform: translateY(-50%);
-    margin-left: -12.299rem;
+    margin-left: -12.295rem;
     z-index: 3;
 }
 
