@@ -5,7 +5,7 @@
 :root {
     --main-color: #ff3e66;
     --alt-color: #0e1133;
-    --pragraph-color: #64667c;
+    --pragraph-color: #505056;
     --alt-background: #eef1f6;
     --transition: 0.3s;
 }
@@ -543,7 +543,7 @@ nav button {
 .marketing-text .p-pros {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     padding-bottom: 2rem;
 }
 
@@ -556,6 +556,10 @@ nav button {
         display: flex;
         flex-direction: column;
         text-align: left;
+    }
+    .p-pros .pros {
+        margin-bottom: 1.5rem;
+        margin-top: 1rem;
     }
 }
 
@@ -668,7 +672,7 @@ nav button {
     opacity: 0.3;
     top: 50%;
     transform: translateY(-50%);
-    margin-left: -12.295rem;
+    margin-left: -12.35rem;
     z-index: 3;
 }
 
@@ -766,3 +770,197 @@ nav button {
     }
 }
 /* End sevices section */
+
+/* Start feedback section */
+.feedback {
+    padding: 4rem 0;
+}
+
+.feedback-content {
+    margin: 5rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.feedback-content .box {
+    background-color: white;
+    padding: 2.5rem;
+    text-align: center;
+    box-shadow: #00000029 0px 20px 41px -10px;
+    border-radius: 0.8rem;
+    width: 12.5rem;
+    margin: 1rem 0.8rem;
+}
+
+@media (min-width: 992px) {
+    .feedback-content .box {
+        width: 12.5rem;
+    }
+}
+
+@media (max-width: 530px) {
+    .feedback-content .box {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 2rem 1.5rem;
+    }
+}
+
+.feedback-content .box p strong {
+    display: block;
+    font-size: 2.5rem;
+    color: var(--alt-color);
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 755px) {
+    .feedback-content .box p strong {
+        font-size: 2.1rem;
+    }
+}
+
+.feedback-content .box p.text {
+    color: #565870;
+}
+
+.video {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+@media (max-width: 767px) {
+    .video {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.video .img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video figure .img::before {
+    content: url(../images/icons8-video-64.png);
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.video figure img {
+    width: 100%;
+}
+
+.video figure figcaption {
+    padding: 2rem 0 2rem 4rem;
+}
+
+.video figure figcaption h3 {
+    color: var(--alt-color);
+    font-size: 1.8rem;
+    margin-bottom: 1.1rem;
+}
+
+@media (max-width: 991px) {
+    .video figure figcaption {
+        padding: 2rem 0 1rem 1rem;
+    }
+    .video figure figcaption h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 476px) {
+    .video figure figcaption h3 {
+        font-size: 1.123rem;
+    }
+}
+
+.video figure figcaption p {
+    color: var(--pragraph-color);
+    line-height: 1.4;
+}
+
+.video figure figcaption button {
+    margin-top: 2.5rem;
+    color: var(--alt-color);
+    border: 1px solid var(--pragraph-color);
+    border-radius: 3rem;
+    padding: 0.8rem 2rem;
+    background-color: transparent;
+    transition: var(--transition);
+}
+
+.video figure figcaption button:hover {
+    background-color: var(--main-color);
+    color: white;
+    border-color: var(--main-color);
+}
+
+.video .image {
+    position: relative;
+}
+
+.video .image::before,
+.video .image::after {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    color: var(--pragraph-color);
+    background-color: transparent;
+    border: 2px solid #50505640;
+    padding: 1rem;
+    border-radius: 51%;
+    top: 18rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+@media (min-width: 1200px) {
+    .video .image::before,
+    .video .image::after {
+        top: 22rem;
+    }
+}
+
+.video .image::before {
+    content: '\f060';
+    right: 4rem;
+}
+
+.video .image::after {
+    content: '\f061';
+    right: 0;
+}
+
+@media (max-width: 991px) {
+    .video .image::before,
+    .video .image::after {
+        top: 14rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .video .image::before,
+    .video .image::after {
+        display: none;
+    }
+}
+
+.video .image img {
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .video .image img {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+/* End feedback section */
