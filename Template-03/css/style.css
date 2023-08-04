@@ -138,7 +138,10 @@ li.sub-list {
 /* Start Header section */
 header {
     background-color: var(--alt-background);
-    position: relative;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 4;
 }
 
 header .container {
@@ -250,123 +253,40 @@ header .up:hover {
 .landing {
     padding: 5rem 0;
     background-color: var(--alt-background);
+    height: 100vh;
+    position: relative;
+    z-index: 3;
 }
 
 .landing .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--alt-color);
 }
 
-.landing-content {
-    flex-basis: 50%;
-    align-self: flex-start;
-}
+.landing-content {}
+
+.landing-content .text {}
 
 .landing-content .text h1 {
-    font-weight: normal;
-    font-size: 4rem;
+    color: var(--alt-color);
+    font-size: 2rem;
 }
 
-.landing-content .text p {
-    margin: -1.5rem 0 2.3rem;
-    font-size: 1.15rem;
-}
+.landing-content .form {}
 
-.form {
-    position: relative;
-}
-
-.form i.env {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 1.4rem;
-    color: #d4cbce;
-    font-weight: normal;
-    font-size: 1.2rem;
-}
-
-.form input[type="email"] {
-    background-color: white;
-    padding: 1.3rem 3rem;
-    border-radius: 5rem;
-    border: none;
-    width: 25rem;
-    border-left: 3px solid var(--main-color);
-}
-
-.form i::after {
-    font-family: 'Font Awesome 5 Free';
-    content: '\f061';
-    font-weight: 900;
-    position: absolute;
-    color: var(--main-color);
-    top: 50%;
-    transform: translateY(-50%);
-    left: 21rem;
-}
-
-@media (max-width: 767px) {
-    .form i::after {
-        left: 15rem;
-    }
-    .form input[type="email"] {
-        width: 20rem;
-    }
-}
-
-.form input[type="email"]:focus {
-    outline: none;
-}
-
-.landing-content .text h1 span {
-    font-weight: bold;
-}
-
-.people {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 2rem;
-}
-
-.people-images {
-    display: flex;
-    padding-right: 4rem;
-}
-
-.people-images img {
+.landing-content .people-images img {
     width: 3rem;
-    border: 3px solid white;
     border-radius: 50%;
-    margin-left: -1rem;
-}
-
-.feedback {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.feedback p:first-child {
-    font-size: 1.7rem;
-    font-weight: bold;
-}
-
-.feedback p:last-child {
-    font-size: 0.9rem;
 }
 
 .landing-img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
     flex: 1;
-    position: relative;
 }
 
 .landing-img img {
-    width: 45rem;
-
+    width: 100%;
 }
 /* end landing section */
 
@@ -437,48 +357,37 @@ header .up:hover {
     border-radius: 50%;
     margin-bottom: 1.6rem;
     transition: var(--transition);
-    /* position: relative; */
 }
 
 .cards .card:first-child > i,
 .cards .card:first-child:hover {
     background-color: #2facfc;
-    /* color: #2facfc; */
 }
 
 .cards .card:nth-child(2) > i,
 .cards .card:nth-child(2):hover {
     background-color: #ea4d89;
-    /* color: #ea4d89; */
 }
 
 .cards .card:nth-child(3) > i,
 .cards .card:nth-child(3):hover {
     background-color: #3679ff;
-    /* color: #3679ff; */
 }
 
 .cards .card:nth-child(4) > i,
 .cards .card:nth-child(4):hover {
     background-color: #f67842;
-    /* color: #f67842; */
 }
 
 .cards .card:nth-child(5) > i,
 .cards .card:nth-child(5):hover {
     background-color: #6b88f7;
-    /* color: #6b88f7; */
 }
 
 .cards .card:nth-child(6) > i,
 .cards .card:nth-child(6):hover {
     background-color: #3bb094;
-    /* color: #3bb094; */
 }
-
-/* .cards .card:hover i {
-    background-color: white;
-} */
 
 .cards .card h3 {
     color: var(--alt-color);
