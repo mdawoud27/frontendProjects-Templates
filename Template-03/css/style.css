@@ -263,6 +263,7 @@ nav button:hover {
     flex-direction: column;
     justify-content: center;
     flex-basis: 45%;
+    margin-top: 2.5rem;
 }
 
 @media (min-width: 992px) {
@@ -405,13 +406,13 @@ nav button:hover {
 
 @media (max-width: 991px) {
     .landing-img img {
-        width: 33%;
+        width: 30%;
     }
 }
 
 @media (max-width: 767px) {
     .landing-img img {
-        width: 55%;
+        width: 46%;
     }
 }
 /* end landing section */
