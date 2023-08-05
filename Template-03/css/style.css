@@ -427,13 +427,14 @@ nav button:hover {
     content: '';
     position: fixed;
     bottom: 2rem;
-    right: 2rem;
+    right: 1.5rem;
     padding: 0.5rem;
     border-radius: 0.3rem;
     background-color: var(--main-color);
     color: white;
     cursor: pointer;
     transition: var(--transition);
+    z-index: 5;
 }
 
 .features .up:hover {
@@ -1642,17 +1643,14 @@ footer .copyright {
     align-items: center;
 }
 
-@media (max-width: 767px) {
-    footer .copyright {
-        flex-direction: column;
-    }
-}
-
 footer .copyright .buttons {
     display: flex;
 }
 
 @media (max-width: 767px) {
+    footer .copyright {
+        flex-direction: column;
+    }
     footer .copyright .buttons {
         margin-bottom: 1.6rem;
         font-size: 0.9rem;
@@ -1713,6 +1711,12 @@ footer .copyright > p {
 }
 
 @media (max-width: 767px) {
+    footer .copyright > p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 991px) {
     footer .copyright > p {
         font-size: 0.8rem;
     }
