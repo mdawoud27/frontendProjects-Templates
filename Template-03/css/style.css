@@ -108,7 +108,7 @@ nav button:hover {
     background-color: var(--alt-background);
     height: 100vh;
     position: relative;
-    z-index: 2;
+    z-index: 6;
 }
 
 .landing .container {
