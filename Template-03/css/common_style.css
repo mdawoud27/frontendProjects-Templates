@@ -1,0 +1,137 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Global Variables */
+:root {
+    --main-color: #ff3e66;
+    --alt-color: #0e1133;
+    --pragraph-color: #505056;
+    --alt-background: #eef1f6;
+    --border-color: #5050562b;
+    --main-padding: 5rem;
+    --transition: 0.3s;
+}
+
+/* Global Rules */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', 'Open Sans', 'Work Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+/* Small Screens */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium Screens */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large Screen */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+/* Common Classes */
+.left-right-arrows::before,
+.left-right-arrows::after {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    color: var(--pragraph-color);
+    background-color: transparent;
+    border: 2px solid #50505640;
+    padding: 1rem;
+    border-radius: 51%;
+    top: 18rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+@media (min-width: 1200px) {
+    .left-right-arrows::before,
+    .left-right-arrows::after {
+        top: 22rem;
+    }
+}
+
+.left-right-arrows::before {
+    content: '\f060';
+    right: 4rem;
+}
+
+.left-right-arrows::after {
+    content: '\f061';
+    right: 0;
+}
+
+@media (max-width: 991px) {
+    .left-right-arrows::before,
+    .left-right-arrows::after {
+        top: 14rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .left-right-arrows::before,
+    .left-right-arrows::after {
+        display: none;
+    }
+}
+
+/* Common Elements */
+.main-header {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: var(--alt-color);
+}
+
+.main-header + p {
+    color: #777;
+}
+
+li.sub-list {
+    position: relative;
+}
+
+.sub-list::after {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f078';
+    font-weight: 900;
+    position: absolute;
+    color: var(--alt-color);
+    right: 9px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.5rem;
+}
