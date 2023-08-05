@@ -1313,6 +1313,11 @@ nav button:hover {
     transform: translateY(-50%);
 }
 
+.pricing .plan:last-child .advantages p::before {
+    background-color: rgb(57 197 111 / 25%);
+    color: #39c56f;
+}
+
 .pricing button {
     border: none;
     border: 2px solid var(--border-color);
