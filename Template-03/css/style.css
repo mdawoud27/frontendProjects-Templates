@@ -1170,10 +1170,13 @@ nav button:hover {
     }
     .bttn button:first-child .text p,
     .bttn button:nth-child(2) .text p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+    }
+    .bttn button .text {
+        padding-left: 0.5rem;
     }
     .bttn button .text h3 {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
 /* End Download section */
