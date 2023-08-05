@@ -8,6 +8,7 @@
     --pragraph-color: #505056;
     --alt-background: #eef1f6;
     --border-color: #5050562b;
+    --main-padding: 5rem;
     --transition: 0.3s;
 }
 
@@ -241,7 +242,7 @@ nav button:hover {
 
 /* start landing section */
 .landing {
-    padding: 5rem 0;
+    padding: var(--main-padding) 0;
     background-color: var(--alt-background);
     height: 100vh;
     position: relative;
@@ -331,7 +332,7 @@ nav button:hover {
 }
 
 .landing-content .form input[type="email"] {
-    border: 2px solid white;
+    border: 2px solid transparent;
     border-radius: 3rem;
     padding: 1rem 3rem;
     width: 80%;
@@ -354,7 +355,6 @@ nav button:hover {
 
 .landing-content .form input[type="email"]:focus {
     outline: none;
-    background-color: white;
 }
 
 .landing-content .people {
@@ -925,7 +925,7 @@ nav button:hover {
 
 /* Start feedback section */
 .feedback {
-    padding: 4rem 0;
+    padding: var(--main-padding) 0;
 }
 
 .feedback-content {
@@ -1074,7 +1074,7 @@ nav button:hover {
 /* Start Download section */
 .download {
     background-color: var(--alt-background);
-    padding: 6rem 0;
+    padding: var(--main-padding) 0;
 }
 
 .download p:first-child {
@@ -1183,7 +1183,7 @@ nav button:hover {
 
 /* Start pricing section */
 .pricing {
-    padding: 5rem 0;
+    padding: var(--main-padding) 0;
 }
 
 .pricing .main-header,
@@ -1343,7 +1343,6 @@ nav button:hover {
 
 /* Start opinion section */
 .opinion {
-    /* padding: 5rem 0; */
     color: white;
     position: relative;
 }
@@ -1451,7 +1450,7 @@ nav button:hover {
 
 /* Start sponser section */
 .sponser {
-    padding: 5rem 0;
+    padding: var(--main-padding) 0;
 }
 
 .sponser .main-header,
