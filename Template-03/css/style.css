@@ -93,6 +93,7 @@ nav button:hover {
 
 .toggle-menu {
     font-size: 1.4rem;
+    cursor: pointer;
 } 
 
 @media (min-width: 768px) {
